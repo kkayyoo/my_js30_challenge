@@ -3,14 +3,20 @@
     --base: #1abc9c;
     --spacing: 15px;
     --blur: 10px;
+    --font-size: 18px;
 }
 img {
    padding: var(--spacing);
    background: var(--base);
    filter: blur(var(--blur));
+   margin-top: 30px;
 }
 .highlight {
-    color: var(--base)
+    color: var(--base);
+}
+.info {
+    font-size: var(--font-size);
+    line-height: 1.5;
 }
 /* Regular CSS Style */
 body {
@@ -28,4 +34,12 @@ body {
 
 input {
   width:100px;
+}
+.info-container {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    overflow-y: auto;
 }
