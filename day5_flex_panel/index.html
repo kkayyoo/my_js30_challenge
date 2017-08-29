@@ -39,6 +39,8 @@
       const panel = document.querySelectorAll('.panel');
 
       function openPanel() {
+          const b = document.querySelector(".panel.open");
+          if (b) b.classList.remove("open");
           this.classList.toggle('open');
       }
       function panelActive(e) {
